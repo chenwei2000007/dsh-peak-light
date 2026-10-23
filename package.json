@@ -1,5 +1,5 @@
 {
-  "name": "dsh-ds-peak-light",
+  "name": "dsh-peak-light",
   "version": "0.1.0",
   "description": "Tiny peak/off-peak pricing indicator beside the DeepSeek Harness sidebar brand: red during peak pricing, green off-peak, hover for a countdown.",
   "license": "MIT",
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chenwei2000007/dsh-ds-peak-light.git"
+    "url": "git+https://github.com/chenwei2000007/dsh-peak-light.git"
   },
-  "homepage": "https://github.com/chenwei2000007/dsh-ds-peak-light#readme",
+  "homepage": "https://github.com/chenwei2000007/dsh-peak-light#readme",
   "bugs": {
-    "url": "https://github.com/chenwei2000007/dsh-ds-peak-light/issues"
+    "url": "https://github.com/chenwei2000007/dsh-peak-light/issues"
   },
   "keywords": [
     "dsh",

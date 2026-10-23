@@ -1,5 +1,5 @@
 /**
- * dsh-ds-peak-light — 浏览器半边。
+ * dsh-peak-light — 浏览器半边。
  *
  * 占用 `sidebar.brand.name` 单槽位（priority 低于官方品牌插件，单槽位最低者渲染），
  * 重新渲染官方 `BrandWordmark`（deepseek + HARNESS 徽标），并在它右侧画出
@@ -7,7 +7,7 @@
  * 槽位被更高优先级占用时官方品牌照常回退，因此本插件卸载后不留痕迹。
  */
 
-const STYLE_ID = 'dsh-ds-peak-light/client.css'
+const STYLE_ID = 'dsh-peak-light/client.css'
 
 const CSS = `
 .dshPeakDot {
@@ -62,7 +62,7 @@ function ensureStyle() {
   if (typeof document === 'undefined') return
   if (document.querySelector(`style[data-plugin-css=${JSON.stringify(STYLE_ID)}]`)) return
   const tag = document.createElement('style')
-  tag.dataset.plugin = 'dsh-ds-peak-light'
+  tag.dataset.plugin = 'dsh-peak-light'
   tag.dataset.pluginCss = STYLE_ID
   tag.textContent = CSS
   document.head.appendChild(tag)
@@ -140,12 +140,12 @@ export function apply(ctx) {
           // 单槽位按 priority 从低到高取第一个渲染；官方品牌插件是 0，
           // 这里用 -1 才能盖过它（相同 priority 会直接抛错）。
           priority: -1,
-          registrant: 'dsh-ds-peak-light',
+          registrant: 'dsh-peak-light',
         },
         PeakBrandName,
       ),
     )
   } catch (error) {
-    console.warn('[dsh-ds-peak-light] 已跳过：', error)
+    console.warn('[dsh-peak-light] 已跳过：', error)
   }
 }

@@ -1,4 +1,4 @@
-# Release checklist · dsh-ds-peak-light
+# Release checklist · dsh-peak-light
 
 This file is for publishing. It is **not** part of the npm package (`files` excludes
 `release/`).
@@ -7,8 +7,8 @@ This file is for publishing. It is **not** part of the npm package (`files` excl
 
 | Item | Value |
 |---|---|
-| npm package | `dsh-ds-peak-light` (unscoped, unused on npm as of 2026-10-23) |
-| GitHub repo | `https://github.com/chenwei2000007/dsh-ds-peak-light` (must be created) |
+| npm package | `dsh-peak-light` (unscoped, unused on npm as of 2026-10-23) |
+| GitHub repo | `https://github.com/chenwei2000007/dsh-peak-light` (must be created) |
 | Author | `chenwei2000007 <chenwei2000007@gmail.com>` |
 | License | MIT |
 | Market category | `usage` (Usage & Billing) |
@@ -19,7 +19,7 @@ cannot link the package back to the repo.
 
 ## 1. Create the GitHub repository
 
-- Public repo named `dsh-ds-peak-light` under `chenwei2000007`, no README initialization.
+- Public repo named `dsh-peak-light` under `chenwei2000007`, no README initialization.
 - Add the topic **`dsh-plugin`** (Settings → Topics).
 - The [awesome list](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin)
   requires the repo to be **at least 1 day old** before a listing PR is accepted.
@@ -31,7 +31,7 @@ The local repository is already initialized, committed on `main` as
 GitHub repository exists, only add the remote and push:
 
 ```powershell
-git remote add origin https://github.com/chenwei2000007/dsh-ds-peak-light.git
+git remote add origin https://github.com/chenwei2000007/dsh-peak-light.git
 git push -u origin main
 ```
 
@@ -42,7 +42,7 @@ git push -u origin main
 ```powershell
 npm login          # browser + OTP if 2FA is enabled
 npm publish        # prepack rebuilds lib/client.js
-npm view dsh-ds-peak-light version
+npm view dsh-peak-light version
 ```
 
 - The package is public and unscoped; `publishConfig.access` is `public`.
@@ -57,7 +57,7 @@ there is no upload endpoint.
 
 1. Fork `awesome-dsh-plugin/awesome-dsh-plugin`.
 2. Copy `release/awesome-entry.yml` to
-   `data/plugins/chenwei2000007__dsh-ds-peak-light.yml` (one file, nothing else).
+   `data/plugins/chenwei2000007__dsh-peak-light.yml` (one file, nothing else).
 3. Commit, push, open a PR.
 
 CI checks, in order: at most 3 entries per PR, `dsh.bundle` in the target repo,
@@ -86,7 +86,7 @@ Notes:
 
 ```powershell
 npm pack --pack-destination release
-tar -tzf release/dsh-ds-peak-light-0.1.0.tgz
+tar -tzf release/dsh-peak-light-0.1.0.tgz
 ```
 
 Expected contents: `package.json`, `cordis.patch.yml`, `icon.svg`, `README*.md`,

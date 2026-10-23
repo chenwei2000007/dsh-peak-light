@@ -1,4 +1,4 @@
-# dsh-ds-peak-light · DeepSeek 峰谷小圆灯
+# dsh-peak-light · DeepSeek 峰谷小圆灯
 
 在 DSH 侧栏「deepseek HARNESS」品牌文字的右侧加一颗小圆灯：
 
@@ -47,7 +47,7 @@ cordis.patch.yml       bundle 层：插入一行 Loader entry
 ## 构建与测试
 
 ```powershell
-cd plugins\dsh-ds-peak-light
+cd plugins\dsh-peak-light
 npm run build             # 或 node scripts/build-client.mjs
 npm test                  # 规则单测 + bundle 冒烟测试
 npm run dev:install       # 复制到 %DSH_PROFILE_DIR%\plugins 并登记（需写 ~\.dsh 权限）
@@ -59,18 +59,18 @@ npm run dev:install       # 复制到 %DSH_PROFILE_DIR%\plugins 并登记（需�
 
 ## 发布到 npm / 插件市场
 
-包名 `dsh-ds-peak-light`，市场分类 `usage`。完整清单、GitHub 建仓、npm 发布、
+包名 `dsh-peak-light`，市场分类 `usage`。完整清单、GitHub 建仓、npm 发布、
 awesome-dsh-plugin 的 PR 材料都在 [release/PUBLISH.md](release/PUBLISH.md)，
 可直接提交的条目在 [release/awesome-entry.yml](release/awesome-entry.yml)。
 发布动作需要本人的 npm / GitHub 登录态，仓库满 1 天后才能被精选列表收录。
 
 ## 安装位置（本机）
 
-- 源码：`C:\Users\kk302\Documents\deepseek-harness\default-workspace\plugins\dsh-ds-peak-light`
-- 装机副本：`C:\Users\kk302\.dsh\profiles\desktop\plugins\dsh-ds-peak-light`
-- 配置档依赖：`"dsh-ds-peak-light": "link:./plugins/dsh-ds-peak-light"`
-- `package.json` 的 `dsh.profile.bundles` 末尾追加 `dsh-ds-peak-light`
-- `node_modules\dsh-ds-peak-light` 指向装机副本（junction）
+- 源码：`C:\Users\kk302\Documents\deepseek-harness\default-workspace\plugins\dsh-peak-light`
+- 装机副本：`C:\Users\kk302\.dsh\profiles\desktop\plugins\dsh-peak-light`
+- 配置档依赖：`"dsh-peak-light": "link:./plugins/dsh-peak-light"`
+- `package.json` 的 `dsh.profile.bundles` 末尾追加 `dsh-peak-light`
+- `node_modules\dsh-peak-light` 指向装机副本（junction）
 
 ## 已知限制
 

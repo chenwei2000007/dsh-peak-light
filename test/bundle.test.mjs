@@ -161,10 +161,10 @@ test('官方文字组件缺失时不占用槽位，保留回退', () => {
 test('插件清单与 bundle 约定一致', () => {
   const pkg = JSON.parse(fs.readFileSync(path.join(root, 'package.json'), 'utf8'))
   const patch = fs.readFileSync(path.join(root, 'cordis.patch.yml'), 'utf8')
-  assert.equal(pkg.name, 'dsh-ds-peak-light')
+  assert.equal(pkg.name, 'dsh-peak-light')
   assert.equal(pkg.dsh.client.platform, 'web')
   assert.equal(pkg.exports['./client'].default, './lib/client.js')
-  assert.match(patch, /name: dsh-ds-peak-light/)
-  assert.match(bundleSource, /id: "dsh-ds-peak-light"/)
+  assert.match(patch, /name: dsh-peak-light/)
+  assert.match(bundleSource, /id: "dsh-peak-light"/)
   assert.match(bundleSource, /sidebar\.brand\.name/)
 })

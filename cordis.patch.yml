@@ -1,5 +1,5 @@
-# dsh-ds-peak-light bundle layer.
+# dsh-peak-light bundle layer.
 # `name` is the package name resolved from the profile's node_modules.
 - insert:
-    - id: dsh-ds-peak-light
-      name: dsh-ds-peak-light
+    - id: dsh-peak-light
+      name: dsh-peak-light

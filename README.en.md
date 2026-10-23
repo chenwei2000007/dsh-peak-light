@@ -1,4 +1,4 @@
-# dsh-ds-peak-light
+# dsh-peak-light
 
 A tiny peak/off-peak pricing indicator for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness):
 a 6px dot to the right of the sidebar brand (`deepseek HARNESS`).
@@ -25,7 +25,7 @@ The older "00:30–08:30 nightly discount" rule is retired.
 ## Install
 
 ```sh
-dsh plugin --profile <profile> add dsh-ds-peak-light
+dsh plugin --profile <profile> add dsh-peak-light
 ```
 
 Or install it from the **Plugins** page / DSH Market. This is a Web-client plugin:
