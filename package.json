@@ -1,0 +1,73 @@
+{
+  "name": "dsh-ds-peak-light",
+  "version": "0.1.0",
+  "description": "Tiny peak/off-peak pricing indicator beside the DeepSeek Harness sidebar brand: red during peak pricing, green off-peak, hover for a countdown.",
+  "license": "MIT",
+  "author": {
+    "name": "chenwei2000007",
+    "email": "chenwei2000007@gmail.com",
+    "url": "https://github.com/chenwei2000007"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenwei2000007/dsh-ds-peak-light.git"
+  },
+  "homepage": "https://github.com/chenwei2000007/dsh-ds-peak-light#readme",
+  "bugs": {
+    "url": "https://github.com/chenwei2000007/dsh-ds-peak-light/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "pricing",
+    "peak",
+    "off-peak",
+    "token",
+    "sidebar"
+  ],
+  "type": "module",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.1 <0.3.0",
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build-client.mjs",
+    "test": "node scripts/build-client.mjs && node test/policy.test.mjs && node test/bundle.test.mjs",
+    "dev:install": "node scripts/install.mjs",
+    "prepack": "node scripts/build-client.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

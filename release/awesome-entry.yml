@@ -1,0 +1,6 @@
+url: https://github.com/chenwei2000007/dsh-ds-peak-light
+name: chenwei2000007/dsh-ds-peak-light
+category: usage
+description:
+  en: A tiny indicator beside the DeepSeek Harness sidebar brand that is red during DeepSeek peak pricing and green off-peak, with a hover countdown to the next switch.
+  zh: 在 DeepSeek Harness 侧栏品牌字右侧显示一颗峰谷小圆灯：峰时红色、谷时绿色，悬停可看距离下次切换的倒计时。
