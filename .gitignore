@@ -2,3 +2,4 @@ node_modules/
 release/*.tgz
 .npm-cache/
 *.log
+NPM-HANDOVER.md

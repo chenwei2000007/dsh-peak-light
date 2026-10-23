@@ -47,7 +47,7 @@ cordis.patch.yml       bundle 层：插入一行 Loader entry
 ## 构建与测试
 
 ```powershell
-cd plugins\dsh-peak-light
+cd D:\git\dsh-peak-light
 npm run build             # 或 node scripts/build-client.mjs
 npm test                  # 规则单测 + bundle 冒烟测试
 npm run dev:install       # 复制到 %DSH_PROFILE_DIR%\plugins 并登记（需写 ~\.dsh 权限）
@@ -66,7 +66,7 @@ awesome-dsh-plugin 的 PR 材料都在 [release/PUBLISH.md](release/PUBLISH.md)�
 
 ## 安装位置（本机）
 
-- 源码：`C:\Users\kk302\Documents\deepseek-harness\default-workspace\plugins\dsh-peak-light`
+- 源码：`D:\git\dsh-peak-light`
 - 装机副本：`C:\Users\kk302\.dsh\profiles\desktop\plugins\dsh-peak-light`
 - 配置档依赖：`"dsh-peak-light": "link:./plugins/dsh-peak-light"`
 - `package.json` 的 `dsh.profile.bundles` 末尾追加 `dsh-peak-light`
